@@ -1,0 +1,44 @@
+{
+  "enabled": true,
+  "topics": [
+    "network automation",
+    "SD-WAN enterprise",
+    "agentic AI services",
+    "AI agent frameworks",
+    "LLM orchestration platforms",
+    "autonomous AI systems",
+    "Claude",
+    "Gemini",
+    "Anthropic",
+    "Wi-Fi networks",
+    "cyber security",
+    "network security",
+    "agentic engineering",
+    "vibe coding",
+    "openclaw"
+  ],
+  "speakers": {
+    "count": 2,
+    "profiles": [
+      {
+        "name": "Alex",
+        "style": "Enthusiastic tech journalist, uses analogies to explain complex topics without over simplifying, keeps energy high."
+      },
+      {
+        "name": "Jordan",
+        "style": "Pragmatic network engineer, adds depth with real-world experience, dry humor."
+      }
+    ]
+  },
+  "nitterAccounts": [
+    "iaboripple",
+    "networklovers",
+    "aaborimou"
+  ],
+  "youtubeChannels": [
+    "UCsBjURrPoezykLs9EqgamOA",
+    "UCvjgXvBlmQFRLU8kFmI8Aqw"
+  ],
+  "maxDurationMinutes": 18,
+  "updatedAt": "2026-03-14T15:41:57.363817+00:00"
+}

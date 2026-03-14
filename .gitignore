@@ -1,0 +1,10 @@
+# Generated episodes (large audio files)
+episodes/*.mp3
+
+# Runtime state
+podcast-archive.json
+__pycache__/
+*.pyc
+
+# Secrets
+secrets.json
