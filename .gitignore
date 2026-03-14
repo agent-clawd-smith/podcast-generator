@@ -6,5 +6,7 @@ podcast-archive.json
 __pycache__/
 *.pyc
 
-# Secrets
+# Secrets and credentials
 secrets.json
+.env
+credentials/
