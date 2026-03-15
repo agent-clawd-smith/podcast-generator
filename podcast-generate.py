@@ -401,11 +401,17 @@ def main():
     # Publish to Podbean
     podbean_url = ""
     if has_audio:
-        pb_result = podbean_publisher.publish(audio_path, script_result["title"], script_result["summary"])
+        # Build rich description with sources
+        podbean_description = script_result["summary"]
+        if script_result.get("sources_text"):
+            podbean_description += "\n\n📚 Sources Referenced:\n" + script_result["sources_text"]
+        
+        pb_result = podbean_publisher.publish(audio_path, script_result["title"], podbean_description)
         if pb_result["success"]:
             podbean_url = pb_result.get("episode_url", "")
             episode["podbeanUrl"] = podbean_url
             save_archive(archive)
+            print(f"  Published to Podbean: {podbean_url}")
         else:
             print(f"  WARNING: Podbean publish failed: {pb_result['error']}")
 

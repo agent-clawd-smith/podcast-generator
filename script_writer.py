@@ -83,11 +83,13 @@ Rules:
 - Cover the most important stories first, with natural transitions
 - Include brief analysis and implications, not just news summaries
 - Add light banter between speakers but keep it professional
-- Start with a brief intro/greeting, end with a sign-off
+- Start with a brief intro/greeting
+- End with a sign-off where EACH speaker shares their single most important takeaway from today's episode (1-2 sentences each, personal and specific)
 - Target approximately {target_words} words ({max_duration_minutes} minutes at speaking pace)
 - Reference source URLs naturally (e.g., "according to a report from...")
 - Do NOT use sound effects, music cues, or stage directions
-- After the script, add a line "---SUMMARY---" followed by a 1-2 sentence summary of the episode suitable for a podcast listing. Describe the key themes and highlights conversationally — do NOT just list article titles."""
+- After the script, add a line "---SUMMARY---" followed by a 1-2 sentence summary of the episode suitable for a podcast listing. Describe the key themes and highlights conversationally — do NOT just list article titles.
+- After the summary, add a line "---SOURCES---" followed by each source on a new line in the format: • Title - URL
 
     user_prompt = f"""Write today's podcast script covering these stories:
 
@@ -142,12 +144,20 @@ End with ---SUMMARY--- followed by a short episode description for the podcast f
     # Extract title from script (first line after greeting usually)
     title = f"The Network & AI Brief — {datetime.now().strftime('%B %d, %Y')}"
 
-    # Extract LLM-generated summary if present
+    # Extract LLM-generated summary and sources if present
     summary = ""
+    sources_text = ""
+    
+    if "---SOURCES---" in script:
+        parts = script.split("---SOURCES---", 1)
+        script = parts[0].rstrip()
+        sources_text = parts[1].strip()
+    
     if "---SUMMARY---" in script:
         parts = script.split("---SUMMARY---", 1)
         script = parts[0].rstrip()
         summary = parts[1].strip()
+    
     if not summary:
         story_titles = [s["title"] for s in stories[:3]]
         summary = "Today: " + "; ".join(story_titles)
@@ -156,6 +166,7 @@ End with ---SUMMARY--- followed by a short episode description for the podcast f
         "script": script,
         "title": title,
         "summary": summary[:500],
+        "sources_text": sources_text,
         "cost_usd": round(cost_usd, 4),
         "input_tokens": input_tokens,
         "output_tokens": output_tokens,
