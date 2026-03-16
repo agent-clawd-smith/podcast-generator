@@ -401,10 +401,30 @@ def main():
     # Publish to Podbean
     podbean_url = ""
     if has_audio:
-        # Build rich description with sources
+        # Build description - Podbean has 500 char limit
+        MAX_DESC_LENGTH = 500
         podbean_description = script_result["summary"]
-        if script_result.get("sources_text"):
-            podbean_description += "\n\n📚 Sources Referenced:\n" + script_result["sources_text"]
+        
+        # Try to fit some sources if there's room
+        if script_result.get("sources_text") and len(podbean_description) < MAX_DESC_LENGTH - 30:
+            remaining = MAX_DESC_LENGTH - len(podbean_description) - 25  # Reserve space for header
+            sources_header = "\n\n📚 Sources:\n"
+            
+            # Add sources one by one until we hit the limit
+            sources_lines = script_result["sources_text"].split("\n")
+            included_sources = []
+            for source_line in sources_lines:
+                if len(sources_header + "\n".join(included_sources + [source_line])) <= remaining:
+                    included_sources.append(source_line)
+                else:
+                    break
+            
+            if included_sources:
+                podbean_description += sources_header + "\n".join(included_sources)
+        
+        # Final truncation safety (shouldn't be needed, but just in case)
+        if len(podbean_description) > MAX_DESC_LENGTH:
+            podbean_description = podbean_description[:MAX_DESC_LENGTH-3] + "..."
         
         pb_result = podbean_publisher.publish(audio_path, script_result["title"], podbean_description)
         if pb_result["success"]:
