@@ -90,6 +90,7 @@ Rules:
 - Do NOT use sound effects, music cues, or stage directions
 - After the script, add a line "---SUMMARY---" followed by a 1-2 sentence summary of the episode suitable for a podcast listing. Describe the key themes and highlights conversationally — do NOT just list article titles.
 - After the summary, add a line "---SOURCES---" followed by each source on a new line in the format: • Title - URL
+"""
 
     user_prompt = f"""Write today's podcast script covering these stories:
 
