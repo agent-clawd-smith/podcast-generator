@@ -9,7 +9,18 @@ FIRECRAWL_API = "https://api.firecrawl.dev/v1/search"
 def search_topic(topic, api_key, limit=5):
     """Search Firecrawl for recent articles on a topic.
     Returns list of {"source": "firecrawl", "title": str, "url": str, "content": str}
+    
+    Logs credit usage to centralized tracker.
     """
+    # Log credit usage (2 credits per search)
+    try:
+        import sys
+        sys.path.insert(0, os.path.expanduser("~/repos/workspace-tools"))
+        from firecrawl_tracker import log_usage
+        log_usage(credits=2, service="podcast", operation="topic_search")
+    except Exception:
+        pass  # Don't fail if tracker unavailable
+    
     body = json.dumps({
         "query": topic,
         "limit": limit,
