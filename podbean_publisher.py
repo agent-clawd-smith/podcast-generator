@@ -86,13 +86,35 @@ def _publish_episode(access_token, title, content, media_key):
         return json.loads(r.read())
 
 
-def publish(audio_path, title, summary):
+def _add_comment(access_token, episode_id, comment_text):
+    """Add a comment to a published episode."""
+    body = urllib.parse.urlencode({
+        "access_token": access_token,
+        "episode_id": episode_id,
+        "content": comment_text,
+    }).encode()
+    req = urllib.request.Request(
+        f"{PODBEAN_API}/episodes/{episode_id}/comments",
+        data=body,
+        headers={"Content-Type": "application/x-www-form-urlencoded"},
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=15) as r:
+            return json.loads(r.read())
+    except urllib.error.HTTPError as e:
+        # Comments may not be enabled or API may not support it
+        return None
+
+
+def publish(audio_path, title, summary, sources_text=None):
     """Publish a podcast episode to Podbean.
 
     Args:
         audio_path: Path to the MP3 file.
         title: Episode title.
-        summary: Episode description/summary.
+        summary: Episode description/summary (500 char limit).
+        sources_text: Optional full sources list to add as a comment.
 
     Returns:
         {"success": True, "episode_url": str} or {"success": False, "error": str}
@@ -124,7 +146,18 @@ def publish(audio_path, title, summary):
         result = _publish_episode(token, title, summary, media_key)
 
         episode_url = result.get("episode", {}).get("permalink_url", "")
+        episode_id = result.get("episode", {}).get("id", "")
         print(f"  [podbean] Published: {episode_url}")
+        
+        # Add sources as a comment if provided
+        if sources_text and episode_id:
+            print("  [podbean] Adding sources as comment...")
+            comment_result = _add_comment(token, episode_id, f"📚 Sources Referenced:\n\n{sources_text}")
+            if comment_result:
+                print("  [podbean] Sources comment added")
+            else:
+                print("  [podbean] Note: Could not add comment (may not be supported)")
+        
         return {"success": True, "episode_url": episode_url}
 
     except urllib.error.HTTPError as e:

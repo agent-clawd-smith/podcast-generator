@@ -426,7 +426,9 @@ def main():
         if len(podbean_description) > MAX_DESC_LENGTH:
             podbean_description = podbean_description[:MAX_DESC_LENGTH-3] + "..."
         
-        pb_result = podbean_publisher.publish(audio_path, script_result["title"], podbean_description)
+        # Pass full sources separately for comment
+        sources_for_comment = script_result.get("sources_text", None)
+        pb_result = podbean_publisher.publish(audio_path, script_result["title"], podbean_description, sources_for_comment)
         if pb_result["success"]:
             podbean_url = pb_result.get("episode_url", "")
             episode["podbeanUrl"] = podbean_url
