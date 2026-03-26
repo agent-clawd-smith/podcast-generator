@@ -52,6 +52,14 @@ def generate_script(stories, speaker_profiles, max_duration_minutes=18, api_key=
     """
     # Gemini TTS supports exactly 2 voices — cap speakers at 2
     speaker_profiles = speaker_profiles[:2]
+    
+    # Load podcast memory for continuity
+    memory_file = os.path.join(os.path.dirname(__file__), "podcast-memory.md")
+    memory_context = ""
+    if os.path.exists(memory_file):
+        with open(memory_file) as f:
+            memory_context = f.read()
+        print(f"  [memory] Loaded {len(memory_context.split())} words of context")
 
     # Build speaker tag instructions
     speaker_tags = []
@@ -69,6 +77,26 @@ def generate_script(stories, speaker_profiles, max_duration_minutes=18, api_key=
     for i, s in enumerate(stories, 1):
         story_block += f"\n### Story {i}: {s['title']}\nSource: {s.get('source', 'unknown')} | {s.get('url', '')}\n{s['content'][:1500]}\n"
 
+    # Build memory context section
+    memory_section = ""
+    if memory_context:
+        memory_section = f"""
+
+=== PODCAST MEMORY & CONTINUITY ===
+{memory_context}
+
+Use this context to:
+- Maintain speaker personality consistency across episodes
+- Reference previous discussions naturally when relevant
+- Honor any apologies or corrections from past episodes
+- Continue running themes/debates organically
+- Build on established dynamics between speakers
+
+DO NOT force callbacks — only reference past episodes when it flows naturally.
+================================
+
+"""
+
     system_prompt = f"""You are a podcast script writer for a daily tech news briefing called "The Network & AI Brief".
 
 Speaker tags (use these EXACTLY):
@@ -76,7 +104,7 @@ Speaker tags (use these EXACTLY):
 
 Speaker personalities:
 {chr(10).join(speaker_descriptions)}
-
+{memory_section}
 Rules:
 - Write a natural, conversational podcast script
 - Use speaker tags at the start of each speaking turn: [SPEAKER_1]: text here
@@ -92,7 +120,8 @@ Rules:
 - After the summary, add a line "---SOURCES---" followed by each source on a new line in the format: • Title - URL
 """
 
-    user_prompt = f"""Write today's podcast script covering these stories:
+    today = datetime.now().strftime("%A, %B %d, %Y")
+    user_prompt = f"""Write today's ({today}) podcast script covering these stories:
 
 {story_block}
 

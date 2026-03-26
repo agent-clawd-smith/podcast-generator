@@ -11,6 +11,7 @@ import urllib.error
 from datetime import datetime, timezone
 
 GEMINI_API = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-tts:generateContent"
+FFMPEG = shutil.which("ffmpeg") or "/opt/homebrew/bin/ffmpeg"
 
 # Map speaker indices to Gemini TTS voices
 VOICE_MAP = {
@@ -286,7 +287,7 @@ def generate_audio(script, speaker_count, api_key, output_path, speaker_profiles
             if "rate=" in mime_type:
                 sample_rate = mime_type.split("rate=")[1].split(";")[0].strip()
             conv = subprocess.run(
-                ["ffmpeg", "-y", "-f", "s16le", "-ar", sample_rate, "-ac", "1",
+                [FFMPEG, "-y", "-f", "s16le", "-ar", sample_rate, "-ac", "1",
                  "-i", raw_path, wav_path],
                 capture_output=True, timeout=30,
             )
@@ -298,7 +299,7 @@ def generate_audio(script, speaker_count, api_key, output_path, speaker_profiles
         # Concatenate WAV files and convert to MP3
         if len(wav_files) == 1:
             result = subprocess.run(
-                ["ffmpeg", "-y", "-i", wav_files[0], "-codec:a", "libmp3lame", "-q:a", "2", output_path],
+                [FFMPEG, "-y", "-i", wav_files[0], "-codec:a", "libmp3lame", "-q:a", "2", output_path],
                 capture_output=True, timeout=60,
             )
         else:
@@ -307,7 +308,7 @@ def generate_audio(script, speaker_count, api_key, output_path, speaker_profiles
                 for wf in wav_files:
                     f.write(f"file '{wf}'\n")
             result = subprocess.run(
-                ["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", concat_list,
+                [FFMPEG, "-y", "-f", "concat", "-safe", "0", "-i", concat_list,
                  "-codec:a", "libmp3lame", "-q:a", "2", output_path],
                 capture_output=True, timeout=120,
             )
@@ -318,7 +319,7 @@ def generate_audio(script, speaker_count, api_key, output_path, speaker_profiles
 
         # Get duration
         probe = subprocess.run(
-            ["ffmpeg", "-i", output_path, "-f", "null", "-"],
+            [FFMPEG, "-i", output_path, "-f", "null", "-"],
             capture_output=True, timeout=30,
         )
         duration_seconds = 0
