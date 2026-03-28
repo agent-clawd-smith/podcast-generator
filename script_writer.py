@@ -112,6 +112,7 @@ Rules:
 - Include brief analysis and implications, not just news summaries
 - Add light banter between speakers but keep it professional
 - Start with a brief intro/greeting
+- This podcast airs EVERY day including weekends. In the sign-off, say "see you tomorrow" — never "see you Monday" or reference a specific future day.
 - End with a sign-off where EACH speaker shares their single most important takeaway from today's episode (1-2 sentences each, personal and specific)
 - Target approximately {target_words} words ({max_duration_minutes} minutes at speaking pace)
 - Reference source URLs naturally (e.g., "according to a report from...")
