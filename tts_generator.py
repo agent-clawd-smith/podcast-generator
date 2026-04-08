@@ -184,7 +184,7 @@ def generate_audio_chunk(text, api_key, speaker_voice_configs):
     )
 
     try:
-        with urllib.request.urlopen(req, timeout=180) as r:
+        with urllib.request.urlopen(req, timeout=300) as r:
             response = json.loads(r.read())
     except urllib.error.HTTPError as e:
         error_body = ""
@@ -266,14 +266,17 @@ def generate_audio(script, speaker_count, api_key, output_path, speaker_profiles
             text = _build_multi_speaker_text(chunk_turns, tts_names)
             chunk_result = generate_audio_chunk(text, api_key, speaker_voice_configs)
 
-            # Retry once on failure
+            # Retry with exponential backoff on failure
             if chunk_result is None:
                 import time
-                print(f"  [tts] Chunk {i+1} failed, retrying in 3s...")
-                time.sleep(3)
-                chunk_result = generate_audio_chunk(text, api_key, speaker_voice_configs)
+                for attempt, delay in enumerate([5, 15, 30], start=1):
+                    print(f"  [tts] Chunk {i+1} failed, retrying in {delay}s (attempt {attempt}/3)...")
+                    time.sleep(delay)
+                    chunk_result = generate_audio_chunk(text, api_key, speaker_voice_configs)
+                    if chunk_result is not None:
+                        break
             if chunk_result is None:
-                print(f"  [tts] Chunk {i+1} failed after retry")
+                print(f"  [tts] Chunk {i+1} failed after 3 retries")
                 return None
 
             audio_bytes, mime_type = chunk_result
