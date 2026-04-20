@@ -398,37 +398,18 @@ def main():
     save_archive(archive)
     print(f"  Archive updated ({len(archive['episodes'])} episodes)")
 
+    # Cleanup old episodes (before publish to free Podbean space)
+    removed = cleanup_module.cleanup()
+    if removed:
+        print(f"  Cleaned up {removed} old episodes")
+
     # Publish to Podbean
     podbean_url = ""
     if has_audio:
-        # Build description - Podbean has 500 char limit
-        MAX_DESC_LENGTH = 500
-        podbean_description = script_result["summary"]
-        
-        # Try to fit some sources if there's room
-        if script_result.get("sources_text") and len(podbean_description) < MAX_DESC_LENGTH - 30:
-            remaining = MAX_DESC_LENGTH - len(podbean_description) - 25  # Reserve space for header
-            sources_header = "\n\n📚 Sources:\n"
-            
-            # Add sources one by one until we hit the limit
-            sources_lines = script_result["sources_text"].split("\n")
-            included_sources = []
-            for source_line in sources_lines:
-                if len(sources_header + "\n".join(included_sources + [source_line])) <= remaining:
-                    included_sources.append(source_line)
-                else:
-                    break
-            
-            if included_sources:
-                podbean_description += sources_header + "\n".join(included_sources)
-        
-        # Final truncation safety (shouldn't be needed, but just in case)
-        if len(podbean_description) > MAX_DESC_LENGTH:
-            podbean_description = podbean_description[:MAX_DESC_LENGTH-3] + "..."
-        
-        # Pass full sources separately for comment
-        sources_for_comment = script_result.get("sources_text", None)
-        pb_result = podbean_publisher.publish(audio_path, script_result["title"], podbean_description, sources_for_comment)
+        # Simple description with just the summary (Podbean API has 500-char limit)
+        podbean_description = script_result['summary'][:500]
+
+        pb_result = podbean_publisher.publish(audio_path, script_result["title"], podbean_description)
         if pb_result["success"]:
             podbean_url = pb_result.get("episode_url", "")
             episode["podbeanUrl"] = podbean_url
@@ -445,11 +426,6 @@ def main():
         msg += "\n\n(Audio unavailable — text script saved)"
     send_imessage(msg)
     print("  iMessage sent")
-
-    # Cleanup old episodes
-    removed = cleanup_module.cleanup()
-    if removed:
-        print(f"  Cleaned up {removed} old episodes")
 
     total_cost = script_result["cost_usd"] + tts_cost
     print(f"\n=== Complete! Total cost: ${total_cost:.4f} ===")
