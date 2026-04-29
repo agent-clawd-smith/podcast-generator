@@ -116,7 +116,7 @@ Rules:
 - End with a sign-off where EACH speaker shares their single most important takeaway from today's episode (1-2 sentences each, personal and specific)
 - Target approximately {target_words} words ({max_duration_minutes} minutes at speaking pace)
 - Reference source URLs naturally (e.g., "according to a report from...")
-- Do NOT use sound effects, music cues, or stage directions
+- Do NOT use sound effects, music cues, stage directions, or action descriptions (e.g., no *slaps table*, *eye twitching*, *perks up*, *leans forward*, etc.). Write only spoken dialogue.
 - After the script, add a line "---SUMMARY---" followed by a 1-2 sentence summary of the episode suitable for a podcast listing. Describe the key themes and highlights conversationally — do NOT just list article titles.
 - After the summary, add a line "---SOURCES---" followed by each source on a new line in the format: • Title - URL
 """
