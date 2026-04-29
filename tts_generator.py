@@ -302,7 +302,7 @@ def generate_audio(script, speaker_count, api_key, output_path, speaker_profiles
         # Concatenate WAV files and convert to MP3
         if len(wav_files) == 1:
             result = subprocess.run(
-                [FFMPEG, "-y", "-i", wav_files[0], "-codec:a", "libmp3lame", "-q:a", "2", output_path],
+                [FFMPEG, "-y", "-i", wav_files[0], "-codec:a", "libmp3lame", "-b:a", "64k", "-ac", "1", output_path],
                 capture_output=True, timeout=60,
             )
         else:
@@ -312,7 +312,7 @@ def generate_audio(script, speaker_count, api_key, output_path, speaker_profiles
                     f.write(f"file '{wf}'\n")
             result = subprocess.run(
                 [FFMPEG, "-y", "-f", "concat", "-safe", "0", "-i", concat_list,
-                 "-codec:a", "libmp3lame", "-q:a", "2", output_path],
+                 "-codec:a", "libmp3lame", "-b:a", "64k", "-ac", "1", output_path],
                 capture_output=True, timeout=120,
             )
 
