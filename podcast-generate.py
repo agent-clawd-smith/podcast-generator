@@ -424,7 +424,7 @@ def main():
         msg += f"\n\n{podbean_url}"
     elif not has_audio:
         msg += "\n\n(Audio unavailable — text script saved)"
-    send_imessage(msg)
+    send_imessage(msg, file_path=audio_path if has_audio else None)
     print("  iMessage sent")
 
     total_cost = script_result["cost_usd"] + tts_cost
