@@ -224,14 +224,28 @@ Prioritize:
 
 
 def send_imessage(text, file_path=None):
-    """Send iMessage notification to Adam."""
-    cmd = ["/opt/homebrew/bin/imsg", "send", "--to", _get_operator_phone(), "--text", text]
+    """Send iMessage notification to Adam. Falls back to text-only on attachment failure."""
+    to = _get_operator_phone()
+
+    def _send(with_file):
+        cmd = ["/opt/homebrew/bin/imsg", "send", "--to", to, "--text", text]
+        if with_file and file_path and os.path.exists(file_path):
+            cmd.extend(["--file", file_path])
+        try:
+            r = subprocess.run(cmd, timeout=60, capture_output=True)
+            if r.returncode != 0:
+                print(f"  [imessage] imsg exited {r.returncode}: {r.stdout.decode()[:300]} {r.stderr.decode()[:300]}")
+                return False
+            return True
+        except (subprocess.TimeoutExpired, OSError) as e:
+            print(f"  [imessage] Failed to send: {e}")
+            return False
+
     if file_path and os.path.exists(file_path):
-        cmd.extend(["--file", file_path])
-    try:
-        subprocess.run(cmd, timeout=30, capture_output=True)
-    except (subprocess.TimeoutExpired, OSError) as e:
-        print(f"  [imessage] Failed to send: {e}")
+        if _send(with_file=True):
+            return
+        print("  [imessage] Attachment failed, retrying text-only")
+    _send(with_file=False)
 
 
 def main():
