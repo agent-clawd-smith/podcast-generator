@@ -1,6 +1,8 @@
 """Podcast script generation using Claude Opus via OpenRouter."""
+import http.client
 import json
 import os
+import time
 import urllib.request
 import urllib.error
 from datetime import datetime, timezone
@@ -151,11 +153,22 @@ End with ---SUMMARY--- followed by a short episode description for the podcast f
         method="POST",
     )
 
-    try:
-        with urllib.request.urlopen(req, timeout=120) as r:
-            response = json.loads(r.read())
-    except (urllib.error.URLError, json.JSONDecodeError, OSError) as e:
-        print(f"  [script] OpenRouter API error: {e}")
+    response = None
+    last_err = None
+    for attempt, delay in enumerate([0, 5, 15, 30], start=1):
+        if delay:
+            print(f"  [script] Retrying in {delay}s (attempt {attempt}/4)...")
+            time.sleep(delay)
+        try:
+            with urllib.request.urlopen(req, timeout=180) as r:
+                response = json.loads(r.read())
+            break
+        except (urllib.error.URLError, http.client.IncompleteRead, http.client.HTTPException,
+                json.JSONDecodeError, ConnectionError, OSError) as e:
+            last_err = e
+            print(f"  [script] OpenRouter API error: {e}")
+    if response is None:
+        print(f"  [script] All retries exhausted; last error: {last_err}")
         return None
 
     script = response["choices"][0]["message"]["content"]
