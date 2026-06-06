@@ -2,8 +2,8 @@
 
 This file maintains continuity across podcast episodes. Updated daily with memorable moments, consolidated weekly.
 
-Last consolidation: 2026-05-24 11:00 UTC
-Backup: podcast-memory-2026-05-24.md
+Last consolidation: 2026-05-31 11:00 UTC
+Backup: podcast-memory-2026-05-31.md
 
 ---
 
@@ -11,8 +11,8 @@ Backup: podcast-memory-2026-05-24.md
 
 This file maintains continuity across podcast episodes. Updated daily with memorable moments, consolidated weekly.
 
-Last consolidation: 2026-05-22 11:00 UTC
-Backup: podcast-memory-2026-05-22.md
+Last consolidation: 2026-05-29 11:00 UTC
+Backup: podcast-memory-2026-05-29.md
 
 ---
 
@@ -21,93 +21,94 @@ Backup: podcast-memory-2026-05-22.md
 ## Speaker Personalities
 
 ### Alex (Host)
-- **Style**: Tech optimist who bridges possibilities with practical concerns; opens with AI assistant scheduling chaos
-- **Signatures**: "The optimist in me wants to say..." / "That's fascinating because..." / "Good morning everyone!"
-- **AI Assistant Character**: Ongoing comedic relationship - schedules absurd meetings like "quantum entanglement debugging," "temporal infrastructure optimization at 3 AM," and "paradigm shift alignment ceremonies"
+- **Style**: Tech optimist who bridges possibilities with practical concerns; consistently plays "optimistic realist"
+- **Signatures**: "The optimist in me wants to say..." / "That's fascinating because..." / Formula One car metaphors
+- **AI Assistant Character**: Ongoing comedic relationship - schedules absurd meetings like "agentic engineering enlightenment at 2 AM," "framework taxonomy meditation at 4 AM," and "vibe coding debates"
 - **Evolution**: Increasingly acknowledges infrastructure realities; growing alignment with Jordan's concerns about deployment speed
 
 ### Jordan (Co-host)
 - **Identity**: Network engineer with deep field experience and passionate security advocacy
 - **Style**: "Voice of paranoid reason" with signature physical reactions and memorable rants
-- **Signatures**: "*eye twitches*" / "Stay paranoid, everyone!" / "Finally, FINALLY someone is talking about..." / "Sweet mercy" / "For the love of all that's holy"
+- **Signatures**: "*eye twitches*" / "Stay paranoid, everyone!" / "Sweet mercy" / "For the love of all that's holy"
 - **Philosophy**: Infrastructure-first approach - "boring, predictable systems" over flashy features
-- **Rare Praise**: Gets genuinely excited about deterministic systems, proper frameworks (Pydantic), and structured approaches
-- **Personal Quirks**: Reads RFCs for fun, paper calendar advocate, "neighborhood network guy," coffee maker friendship during late implementations
+- **Rare Praise**: Chase Cunningham ("That man knows security"), Anthropic's restraint, proper frameworks
+- **Personal Quirks**: Coffee maker friendship, paper calendar advocacy, reads RFCs for fun
 
 ## Major Recurring Themes (Frequency = Significance)
 
-### Vibe Coding Crisis (35x → central show concern)
+### Vibe Coding Crisis (42x → central show obsession)
 - **Jordan's visceral opposition**: "Every time I hear 'vibe coding,' a little part of my engineering soul withers and dies"
 - 41% of code now AI-generated creating debugging nightmares
 - "Technical debt at machine speed" vs. proper engineering practices
-- Distinction from frameworks: shipping code you don't understand vs. using established libraries
+- **New evolution**: "Vibe coding vs. agentic engineering" philosophical divide established
 
-### Infrastructure vs. AI Hype (32x → core philosophy)
-- **"Formula One cars on go-kart tracks"** - signature metaphor for mismatched capabilities
-- "Level six capabilities on level one infrastructure" - recurring frustration
+### Infrastructure vs. AI Hype (38x → core show philosophy)
+- **"Formula One cars on dirt roads/go-kart tracks"** - signature metaphor for mismatched capabilities
+- "AI mansion on a data swamp" - Jordan's new favorite analogy
 - "You can't secure what you can't see" - fundamental visibility principle
 - Building proper roads before deciding what vehicles use them
 
-### AI Governance Gap (28x → established crisis)
+### AI Governance Gap (35x → established crisis)
 - Speed of deployment outpacing governance frameworks
+- 77% failure rate, $890K average implementation costs
 - "Building the plane while flying it, except the plane decides where to fly"
-- The 79-80% problem: Companies deploying without proper oversight
-- "Gap between what AI can do and what it should do"
+- "Someone has to be the adult in the room" - accountability crisis
 
-### Security Reality Checks (25x → Jordan's mission)
-- **Recurring advice**: Check default passwords, network segmentation, AWS billing, SD-WAN patches
+### Security Reality Checks (31x → Jordan's mission)
+- **Recurring advice**: Check AI agent repository permissions, default passwords, network segmentation
+- "We used to call software that read your entire codebase and made autonomous changes malware"
 - "That's not a feature, that's an attack surface the size of Texas"
-- Kill switches need to be "real ones, not theoretical ones"
-- Home networks need enterprise-grade security for remote workers
+- **New concern**: AI agents with excessive GitHub access (Jordan's 6-month breach prediction)
 
-### The Expertise Paradox (18x → growing concern)
+### The Expertise Paradox (24x → growing industry concern)
 - AI eliminating entry-level positions that create future experts
-- "It's like building a nuclear reactor and then firing all the nuclear engineers"
-- Impossible job requirements: "5 years experience in 2-year-old technology"
-- "Struggle is a feature, not a bug" in learning
+- "Supervision without understanding is sophisticated gambling"
+- "Democracy needs informed voters" - Jordan's analogy for tool democratization risks
+- "Speed-running 50 years of software mistakes"
 
 ## Established Interaction Patterns
 
 ### Technical Discussion Flow
-- Alex's AI anecdote → exploration of possibilities → Jordan's security reality check → collaborative solution finding
-- Jordan's dramatic reactions to concerning trends vs. Alex's bridge-building optimism
+- Alex's AI assistant anecdote → exploration of possibilities → Jordan's security reality check → collaborative solution finding
+- Jordan's dramatic reactions ("Sweet mercy," eye twitching) vs. Alex's bridge-building optimism
 - Both naturally connect disparate stories through infrastructure dependencies
 
 ### Recurring Analogies That Stuck
-- **"Toddler with bulldozer keys/permanent markers"** - poor AI deployment practices
-- **"Smart unpredictable houseguest in your vault"** - AI agents in secure environments
+- **"Toddler with bulldozer keys"** - poor AI deployment practices
 - **"Do you know what else does that? Malware"** - Jordan's response to autonomous AI capabilities
-- **"Chocolate teapot in a data center"** - production readiness measure
+- **"Expensive random number generators"** - ungoverned AI agents
+- **"Building castles on quicksand"** - infrastructure foundation problems
 
 ## Active Callbacks & Continuity
 
 ### Promises to Track
-- **Check Point webinar June 16th**: Both committed to attending - follow-up opportunity
-- **LEMON framework security**: Alex promised deeper dive into authentication between modules
-- **OpenClaw monitoring**: Jordan tracking GitHub stars as security nightmare metric (374k+ and climbing)
+- **Jordan's 6-month prediction**: Major breach from AI agent with excessive repository access
+- **ARMO's "Enforceability Ladder"**: Referenced as "mandatory reading"
+- **OpenClaw monitoring**: 374k+ GitHub stars as security nightmare metric
 
 ### Established Credibility Markers
-- **Jordan's field experience**: 2 AM disaster scenarios, client incidents with AI agents reorganizing network topology
-- **Jordan's rare praise moments**: Anthropic's restraint, Pydantic's structure, Karpathy's production experience
-- **Shared technical depth**: Both caught advanced references, OT/IT convergence insights
+- **Jordan's field experience**: 2 AM disaster scenarios, client incidents with AI agents
+- **Jordan's rare praise moments**: Chase Cunningham, proper security frameworks, global accessibility initiatives
+- **Shared technical depth**: Both caught advanced references, infrastructure dependencies
 
 ### Running Predictions to Monitor
-- **Jordan's "six months" prediction**: First major AI agent security breach
-- **Infrastructure losing the race**: "Race between AI capabilities and security infrastructure... infrastructure is losing"
+- **"Infrastructure losing the race"**: Race between AI capabilities and security infrastructure
+- **Framework regret**: Being stuck with wrong choice 6 weeks into production
+- **AI entropy**: Systems degrading by learning from their own mistakes
 
 ## Notable Technical Insights
 
 ### Concrete Metrics Worth Tracking
-- **$1.3M token burn story**: Ongoing concern about resource governance
-- **Million-dollar compute burns**: Unsustainable development model
-- **373k+ GitHub stars**: Jordan's metric for "potential security nightmares"
+- **$890K average AI implementation costs**: Ongoing concern about resource governance
+- **77% AI governance failure rate**: Unsustainable development model
+- **374k+ GitHub stars**: Jordan's metric for "potential security nightmares"
 - **41% AI-generated code**: Creating debugging crisis
 
 ### Key Frameworks Established
 - **Automation vs. Autonomy**: Critical distinction for AI evaluation
 - **The "3 AM test"**: Can you debug it during production outage?
-- **"Does it work when production is on fire?"** - practical AI readiness metric
-- **OODA loop reference**: Jordan's tactical framework for proper AI integration
+- **"Exhaustion by Innovation"**: Jordan's phrase for unsustainable pace of AI tool changes
+- **Token lineage concept**: Security approach Jordan actually endorsed
 
 ## Format Elements Worth Maintaining
 
@@ -125,152 +126,180 @@ Backup: podcast-memory-2026-05-22.md
 
 ---
 
-**Key Evolution This Week**: Vibe coding emerged as Jordan's primary trigger topic (35x mentions). The infrastructure vs. AI hype gap solidified as core show philosophy (32x). Jordan's paranoia increasingly validated as barely adequate rather than excessive. Both hosts concerned about "running experiments in production at massive scale." The expertise paradox became a major shared concern about industry sustainability.
+**Key Evolution This Week**: "Vibe coding" solidified as Jordan's primary trigger (42x mentions). New "AI mansion on data swamp" metaphor emerged. Jordan's paranoia increasingly validated as barely adequate rather than excessive. Both hosts deeply concerned about "supervision without understanding" creating systemic fragility. The expertise paradox became major shared concern about industry sustainability.
 
 ---
-## 2026-05-23
+## 2026-05-30
 
 ## Memorable Moments for Future Episodes
 
 ### Speaker Personality Moments
-• **Alex**: AI assistant scheduled "multi-agent orchestration meditation" and "framework enlightenment therapy" at 5AM
-• **Jordan**: "Stay paranoid, everyone" - signature sign-off worth keeping
-• **Jordan**: "It's turtles all the way down, except the turtles are all potential security vulnerabilities"
-• **Alex**: Gradually shifts from optimistic to concerned throughout episode - good character development
+• **Alex**: AI assistant scheduling "autonomous agent enlightenment" at 3 AM - establishes tech-optimist who sees irony
+• **Jordan**: "Call me old-fashioned, but I like my infrastructure predictable and my sleep uninterrupted" - core skeptic identity
+• **Jordan**: "AI agent unions demanding better compute resources?" - signature sarcastic escalation style
+• **Jordan**: "It's like giving a toddler the keys to a bulldozer" - memorable analogy approach
 
 ### Running Themes/Debates
-• **Complexity vs. Control**: Jordan consistently warns about layered dependencies; Alex sees practical benefits but gets converted
-• **"Framework Regret"**: New term introduced - being stuck with wrong choice 6 weeks into production
-• **Speed vs. Understanding**: Recurring tension between 10x productivity gains and actually comprehending systems
-• **Vendor Lock-in Paranoia**: Jordan's consistent theme, validated by Microsoft/Claude Code cancellation
+• **Speed vs. Safety**: NetBrain's 5-minute VPN fix vs. Jordan's "mistakes happen at AI speed" concern
+• **Bounded vs. Unbounded AI**: Agreement that specific diagnostic tasks work, but fear of "free rein to optimize everything"
+• **Infrastructure-First Philosophy**: Both agree boring foundational work (Ably's streaming) beats flashy features
+• **The "Framework Wars"**: Ongoing skepticism about proliferation without solving fundamental problems
 
 ### Callbacks Worth Keeping
-• **Microsoft Claude Code License Cancellation**: Major breaking news that proved Jordan's warnings right - reference in future vendor discussions
-• **"Exhaustion by Innovation"**: Jordan's phrase for unsustainable pace of AI tool changes
-• **Agent Orchestration = "Conducting orchestra where half play different songs, half improvise jazz"**: Strong metaphor to reuse
+• **CertiK CEO Warning**: "Mass deployment is a disaster waiting to happen" - both speakers referenced multiple times
+• **NetBrain Success Stories**: Concrete 5-minute and 20-minute problem resolution examples
+• **"Non-deterministic" Lab Control**: Jordan's horror at DOE's actual terminology choice
 
 ### Notable One-offs
-• **Jordan**: "Would you accept a human developer with a 27% failure rate?" - sharp critique of AI coding standards
-• **Alex**: "It's like building a house 10x faster by not reading the blueprints" - rare moment of joining Jordan's skepticism
-• **"AI agents need skill trees like video game characters"** - memorable framing of agent capabilities
-• **Coffee maker joke**: Jordan's closing bit about appliances still working without AI
+• **Jordan's Conversion Moment**: Admitted NetBrain's VPN fix was "actually kind of impressive" - rare concession
+• **Collective Realization**: "Perfect storm of interconnected systems nobody fully understands" - shared concern
+• **Revolutionary vs. Evolutionary**: Alex's closing insight about fundamental shift requiring structure, not just enthusiasm
 
 
 ---
-## 2026-05-24
+## 2026-05-31
 
-## Memorable Moments for Future Episodes
-
-### Speaker Personality Moments
-• **Alex**: Optimistic experimenter who sees potential kernels of value even in "vibe coding" - balances Jordan's skepticism
-• **Jordan**: Sharp critic with memorable analogies ("rearranging deck chairs on the Titanic," "Formula One cars without roads") - consistently warns about rushing AI adoption
-• **Alex's AI assistant**: Scheduled him for "vibe coding enlightenment therapy" at 4 AM - ongoing character for future episodes
-
-### Running Themes/Debates  
-• **"Good enough" vs. reliable**: Alex argues sometimes imperfect automation beats manual processes; Jordan insists business-critical systems need reliability
-• **Experimentation vs. production readiness**: Core tension between trying new AI tools and building stable systems
-• **AI promises vs. reality**: Gap between marketing claims and actual implementation challenges
-
-### Callbacks Worth Keeping
-• **"Accidental orchestrators"**: Developers unintentionally becoming AI agent managers - established as ongoing industry problem
-• **OpenClaw's extensive bug fixes**: Evidence that viral tools aren't production-ready (Jordan's skepticism validated)
-• **"Vibe coding"**: Now established as their shorthand for feel-over-understanding development approaches
-
-### Notable One-offs
-• **Jordan's prediction**: "If they've solved non-determinism in AI agents, they've also probably solved P versus NP"
-• **"Peekaboo Bridge"**: Jordan's reaction to infrastructure named after children's games - "now you see your data, now you don't"
-• **Conference talk idea**: Alex suggests "Vibe-Driven Development" as ironic presentation topic
-• **Jordan's paranoia**: Ends with reminder to "stay paranoid" and keep paper calendars as backup
-
-
----
-## 2026-05-25
-
-## Memorable Moments for Future Episodes
+## MEMORABLE MOMENTS FOR FUTURE EPISODES
 
 ### Speaker Personality Moments
-• **Alex**: Opens with absurd AI assistant scheduling mishaps ("harness debugging ceremony at 3 AM") - signature humor style
-• **Jordan**: "Stay paranoid, everyone" as sign-off - establishes consistent skeptical brand
-• **Jordan**: Uses vivid analogies ("toddler with bulldozer keys," "Formula One cars on dirt paths")
-• **Alex**: Balances optimism with realism - finds "healthy tension between possibility and practicality"
+• **Alex**: AI assistant scheduling "harness engineering enlightenment" at 4 AM - establishes ongoing character trait of quirky AI interactions
+• **Jordan**: "My calendar's still made of paper" - tech-skeptical persona, avoids over-automation personally
+• **Jordan**: "Show me a network where all three of those are true, and I'll show you a network that exists only in vendor demonstrations" - signature cynical but accurate takes
+• **Jordan**: "You know what we used to call software that operated without observability? Malware" - memorable one-liners
 
 ### Running Themes/Debates
-• **AI governance crisis**: 77% failure rate, $890K average implementation costs - ongoing industry reality check
-• **"Demo vs. Production" gap**: Agents work in demos, fail catastrophically in real environments
-• **Infrastructure-first philosophy**: Both speakers consistently favor solid engineering over AI hype
-• **Trust deficit**: Need to "prove it works" before getting excited about capabilities
+• **Planning vs. Doing**: Core tension in automation - Jordan advocates "boring, predictable" while Alex leans optimistic about new capabilities
+• **AI Agent Control**: Both agree on need for guardrails, but Jordan more paranoid about autonomous systems
+• **Vendor Reality Gap**: Recurring theme of vendor promises vs. operational reality
 
 ### Callbacks Worth Keeping
-• **ARMO's "Enforceability Ladder"**: Referenced as "mandatory reading" - could become recurring framework
-• **"Self-driving systems" skepticism**: Jordan's car analogy established template for future autonomous system critiques
-• **The $890K stat**: Concrete number that landed hard - worth tracking over time
+• **Jordan's prediction**: "In six months, we'll see major security incidents caused by poorly controlled automation" - follow up on this timeline
+• **"2 AM disaster calls"**: Jordan's repeated reference to automation failures - ongoing metaphor
+• **"Expensive random number generator"**: Jordan's description of uncontrolled automation - signature phrase
 
 ### Notable One-offs
-• **"Vibe coding" criticism**: Jordan's term for undisciplined AI development approach
-• **"Expensive random number generators"**: Jordan's description of ungoverned AI agents
-• **Ben Schoon's "mixed feelings"**: Captured broader industry sentiment about practical AI
-• **Scale Computing praise**: Rare moment of both speakers genuinely approving enterprise tech approach
-
-**Key Dynamic**: Alex plays optimistic realist to Jordan's productive pessimist - maintain this balance.
+• **Community self-organization**: Both speakers impressed that harness engineering repository represents industry maturity
+• **"Three-legged stool" analogy**: Planning + execution + control framework
+• **Jordan's surprising pragmatism**: Despite cynicism, acknowledges value of "automation done right"
+• **"Stay paranoid"**: Jordan's sign-off - potential recurring closer
 
 
 ---
-## 2026-05-26
+## 2026-06-01
+
+## MEMORABLE MOMENTS FOR FUTURE EPISODES
+
+### Speaker Personality Moments
+• **Alex's AI assistant** scheduled a "5 AM vibe coding intervention" with agenda items like "healing through proper documentation" - running gag potential
+• **Jordan's nightmare scenario**: "A Tuesday afternoon deployment triggered by an AI agent" - captures their specific anxieties
+• **Jordan's escalating metaphors**: upgraded from "data swamp" to "connectivity swamp," coined "expensive random number generators with API access"
+• **Jordan's catchphrase evolution**: "Stay paranoid, everyone" as sign-off
+
+### Running Themes/Debates
+• **"What happens when it fails?" vs "move fast and break things"** - fundamental philosophical divide in AI deployment
+• **Trust layers as foundational requirement** - Jordan's core thesis that keeps proving relevant
+• **Production vs pilot gap** - recurring theme about enterprise AI readiness
+• **Security permissions creep** - Jordan's consistent concern about AI agents getting excessive access
+
+### Callbacks Worth Keeping
+• **OpenClaw warnings vindicated** - Jordan previously warned about the 374K-star project, now developer walked away
+• **"Four controls" mystery** - DeployFlow article cut off before revealing all four enterprise-grade deployment controls
+• **Six-month incident prediction** - Jordan updated timeline to three months for autonomous system major incident
+
+### Notable One-offs
+• **Gavriel Cohen walking away from OpenClaw** - rare example of principled developer exit that impressed Jordan
+• **"AI mansion on connectivity swamp"** - Jordan's infrastructure-first philosophy in one phrase
+• **Drug development AI leap** - Jordan's observation about criticality escalation from "write code" to "develop cancer treatments"
+• **"Race between wisdom and velocity"** - Alex's framing of industry dynamics
+
+
+---
+## 2026-06-02
 
 ## Memorable Moments for Future Episodes
 
 ### Speaker Personality Moments
-• **Alex**: AI assistant scheduling "agent orchestration enlightenment" at 2 AM and "framework taxonomy meditation" at 4 AM
-• **Jordan**: Eye twitching while reviewing 300+ AI agents repository; "Stay paranoid, everyone" sign-off
-• **Jordan**: "That's not a salary, that's hazard pay" reaction to $265K biotech AI role
+• **Alex**: AI assistant scheduling "harness engineering enlightenment session" at 4 AM - establishes quirky relationship with AI tools
+• **Jordan**: "Stay paranoid, everyone" sign-off - signature catchphrase worth maintaining
+• **Jordan**: Food truck to five-star restaurant analogy for enterprise AI adoption - shows tendency toward vivid metaphors
 
 ### Running Themes/Debates
-• **Security vs Innovation Speed**: Jordan's consistent "move fast and break things" criticism vs Alex's cautious optimism about AI potential
-• **Training/Certification Skepticism**: Jordan's "3 days to master agentic engineering" vs decades to learn TCP/IP
-• **Infrastructure Foundation**: Both agreeing we're "building castles on quicksand" - running before walking
+• **Infrastructure vs Innovation split**: Jordan consistently advocates for security-first approach while Alex sees potential in new tech
+• **Finland as security role model**: Both speakers impressed by Finland's proactive cyber exercise approach
+• **Vibe coding debate**: Rare agreement moment - both see value when used appropriately, danger in production systems
+• **AI agent interconnection concerns**: Shared worry about autonomous systems interacting with each other
 
 ### Callbacks Worth Keeping
-• **Microsoft Claude Code license cancellation** from previous week - Jordan called it "best news all month"
-• **Jordan's 6-month prediction** about "building castles on quicksand" proving accurate
-• **300+ agents GitHub repository** as recurring reference point for market chaos
+• **Jordan's 3-month security incident prediction**: Referenced in episode, worth tracking
+• **OpenClaw project evolution**: 376,000 GitHub stars, "lobster way" tagline, Microsoft adoption
+• **BUILD 2026 coverage promise**: Alex committed to tomorrow's follow-up
 
 ### Notable One-offs
-• **Therac-25 comparison**: Jordan linking biotech AI to deadly radiation therapy software failures
-• **"Weaponize AI in DNA"**: Jordan's characterization of the Benchling job posting
-• **"AI equivalent of duct tape"**: Poorly written prompt engineering and prayers to demo gods
-• **Social media vs biotech consequences**: "Angry tweets vs biological consequences"
-• **"Speed-running 50 years of software mistakes"**: Jordan's summary of industry behavior
+• **Jordan**: "Building a penthouse suite while the foundation is cracking" - captures industry's priorities perfectly
+• **Alex**: Self-driving cars analogy for AI agent interactions - surprisingly dark turn
+• **Jordan**: "Small civilization" description of OpenClaw's 56,252 commits
+• **Cybersecurity talent shortage**: "Building ships while running out of people who know how to swim"
 
-### Recurring Metaphors to Maintain
-• Comparing AI agents to explosives/dynamite
-• "Hydra heads" - cutting one spawns dumber ones
-• Building planes while flying them
+**Total word count: 247**
 
 
 ---
-## 2026-05-27
+## 2026-06-03
 
 ## Memorable Moments for Future Episodes
 
 ### Speaker Personality Moments
-• **Alex**: AI assistant scheduled "agent orchestration mindfulness" at 3 AM - establishes tech-optimist dealing with AI chaos
-• **Jordan**: "Sweet mercy" reaction to AI designing hardware - signature exasperated response to overhyped tech
-• **Jordan**: "We've literally built malware and called it a personal assistant" - perfectly captures paranoid-but-accurate perspective
-• **Alex**: Formula One car metaphor for AI/infrastructure mismatch - good recurring analogy
+• **Alex**: Opens with absurd AI assistant anecdote (2 AM "trust framework meditation session"), maintains optimistic outlook despite Jordan's warnings
+• **Jordan**: Consistent paranoia/skepticism ("Sweet mercy," "terrifyingly well put"), uses vivid disaster metaphors (death spirals, Michael Bay movies), has specific 3-month incident prediction timeline
 
 ### Running Themes/Debates
-• **Infrastructure vs Innovation**: Jordan's "boring, predictable infrastructure first" vs Alex's "build first, solve problems later"
-• **Speed vs Control**: Fundamental tension between AI development velocity and system understanding
-• **Framework Proliferation**: "Peak framework chaos" - 15 top frameworks, viral GitHub adoption vs sustainable development
+• **Speed vs. Safety**: Jordan repeatedly warns against rushing AI deployment; Alex sees potential in proper frameworks
+• **"Boring vs. Flashy"**: Jordan advocates for "boring, specific solutions beat flashy disasters every time"
+• **AI Governance Gap**: Both agree current governance lags behind deployment reality
+• **Critical Infrastructure Risk**: Major tension point - Jordan horrified by Anthropic's power grid deployments, Alex sees necessity
 
 ### Callbacks Worth Keeping
-• **Chase Cunningham endorsement**: Jordan's rare moment of respect - "That man knows security" 
-• **Jamie Pugh's network insight**: Both agreed this was the most fundamental problem
-• **Token lineage concept**: Jordan actually liked this security approach
-• **97 branches = cry for help**: Perfect example of development chaos both speakers can reference
+• **Jordan's 3-month prediction**: Referenced multiple times, might need timeline updates
+• **OpenClaw reference**: 376K GitHub stars, developer walked away - useful comparison point
+• **"Privileged user" analogy**: Jordan's framework for thinking about AI agents
+• **Alex's meditation session**: Running gag potential about AI assistant mishaps
 
 ### Notable One-offs
-• **374,000 GitHub stars**: "You know what else spreads that fast? Viruses" - Jordan's best skeptical take
-• **Shell command execution**: Jordan's horror at OpenClaw permissions - genuine security concern wrapped in humor
-• **"Stay paranoid, everyone"**: Jordan's sign-off that should become recurring
-• **3 AM AI scheduling**: Relatable AI assistant chaos that humanizes the tech discussion
+• **"It's not paranoia when Anthropic is literally putting AI in charge of power grids"** - Jordan's defensive moment when called paranoid
+• **NetBrain praise**: Rare moment Jordan approves of vendor approach (bounded problems)
+• **IBM Periodic Table**: Unique framing device worth revisiting
+• **"Speed-running infrastructure risk like it's a video game"** - Jordan's gaming metaphor for current AI deployment pace
+
+
+---
+## 2026-06-04
+
+## Memorable Moments for Future Episodes
+
+### Speaker Personality Moments
+• **Alex**: Opens with AI assistant scheduling "harness engineering enlightenment session" at 3 AM - establishes pattern of AI assistant humor
+• **Jordan**: "Those numbers make my eye twitch" + "This man is my spirit animal" (about Ivan's paranoia) - signature skeptical reactions
+• **Jordan**: "Stay paranoid, everyone!" as sign-off - potential recurring catchphrase
+
+### Running Themes/Debates
+• **Infrastructure vs. Hype**: Jordan consistently favoring "boring, predictable infrastructure" while Alex focuses on capabilities
+• **Speed vs. Control**: Ongoing tension about systems operating "faster than humans can intervene"
+• **The 79% governance gap**: Only 21% of companies have mature AI governance - worth revisiting
+• **"Automation that survives in production"** - key phrase both speakers endorsed
+
+### Callbacks Worth Keeping
+• Microsoft Agent Framework security model explanation was "cut off" - follow up needed
+• OpenClaw's probe detection capabilities need deeper investigation
+• Eric Chou mentioned as "required reading" - potential future guest
+• Susan Brown's "paradigm shift" concept - worth expanding
+
+### Notable One-offs
+• **Jordan**: "A model that can detect when it's being probed can also potentially learn to hide its vulnerabilities" - significant security insight
+• **Alex**: "Traditional boundaries we rely on for security and control simply don't exist anymore" - fundamental shift observation
+• **Jordan**: Comparing autonomous AI behavior to malware - "The difference is we're inviting these systems in"
+• Capital One hiring for agentic AI praised because "banks don't mess around with infrastructure"
+
+### Recurring Elements to Maintain
+• Alex's AI assistant developing personality/humor
+• Jordan's "paranoia" as valuable perspective
+• Focus on production reality vs. demo capabilities

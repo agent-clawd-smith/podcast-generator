@@ -291,9 +291,20 @@ def main():
     print("[Stage 1] Gathering sources")
     all_sources = []
 
+    # Compute lookback window based on schedule (Tue & Fri).
+    # Tuesday covers Sat-Tue (since last Fri run); Friday covers Wed-Fri (since last Tue run).
+    weekday = datetime.now(timezone.utc).weekday()  # Mon=0..Sun=6
+    if weekday == 1:      # Tuesday
+        days_back = 4
+    elif weekday == 4:    # Friday
+        days_back = 3
+    else:                 # Manual run on an off day — bias to wider window
+        days_back = 4
+    print(f"  Lookback: {days_back} days (weekday={weekday})")
+
     # Firecrawl
     if firecrawl_key:
-        fc_results = firecrawl_source.gather(topics, firecrawl_key)
+        fc_results = firecrawl_source.gather(topics, firecrawl_key, days_back=days_back)
         all_sources.extend(fc_results)
         print(f"  Firecrawl: {len(fc_results)} articles")
     else:

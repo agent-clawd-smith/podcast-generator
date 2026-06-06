@@ -6,10 +6,12 @@ import urllib.error
 
 FIRECRAWL_API = "https://api.firecrawl.dev/v1/search"
 
-def search_topic(topic, api_key, limit=5):
+def search_topic(topic, api_key, limit=5, days_back=1):
     """Search Firecrawl for recent articles on a topic.
     Returns list of {"source": "firecrawl", "title": str, "url": str, "content": str}
-    
+
+    days_back: how many days back to include results (Google tbs=qdr:d{n}).
+
     Logs credit usage to centralized tracker.
     """
     # Log credit usage (2 credits per search)
@@ -20,12 +22,13 @@ def search_topic(topic, api_key, limit=5):
         log_usage(credits=2, service="podcast", operation="topic_search")
     except Exception:
         pass  # Don't fail if tracker unavailable
-    
+
+    tbs = "qdr:d" if days_back <= 1 else f"qdr:d{int(days_back)}"
     body = json.dumps({
         "query": topic,
         "limit": limit,
         "lang": "en",
-        "tbs": "qdr:d",  # Past 24 hours
+        "tbs": tbs,
         "scrapeOptions": {"formats": ["markdown"]},
     }).encode()
     req = urllib.request.Request(
@@ -53,12 +56,12 @@ def search_topic(topic, api_key, limit=5):
         if r.get("markdown") or r.get("content")
     ]
 
-def gather(topics, api_key):
+def gather(topics, api_key, days_back=1):
     """Search all topics, return combined results."""
     all_results = []
     for topic in topics:
-        print(f"  [firecrawl] Searching: {topic}")
-        results = search_topic(topic, api_key)
+        print(f"  [firecrawl] Searching: {topic} (past {days_back}d)")
+        results = search_topic(topic, api_key, days_back=days_back)
         all_results.extend(results)
         print(f"    Found {len(results)} articles")
     return all_results

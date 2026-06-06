@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What This Is
 
-A daily AI podcast generator pipeline that gathers news from multiple sources, ranks stories, writes a conversational script, and produces multi-speaker audio. Runs as a cron job at 7:30 AM PT via the OpenClaw agent framework.
+A biweekly AI podcast generator pipeline that gathers news from multiple sources, ranks stories, writes a conversational script, and produces multi-speaker audio. Runs as a cron job at 6:30 AM PT on Tuesdays and Fridays via the OpenClaw agent framework. Source lookback adapts to the schedule (4 days on Tue, 3 days on Fri) so coverage spans the gap since the prior episode.
 
 ## Pipeline Architecture
 

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Daily podcast memory extractor — runs before podcast generation.
+"""Podcast memory extractor — runs the day after each episode.
 
 Reads yesterday's transcript, extracts memorable moments, appends to memory file.
-Runs at 6:15 AM daily (15 min before podcast generation at 6:30 AM).
+Cron: Wed & Sat at 6:15 AM (the days after Tue/Fri episodes air).
 """
 import json
 import os
