@@ -3,6 +3,7 @@ episodes/*.mp3
 
 # Runtime state
 podcast-archive.json
+*.log
 __pycache__/
 *.pyc
 

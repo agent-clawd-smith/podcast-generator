@@ -1,0 +1,139 @@
+[SPEAKER_1]: Good morning everyone, and welcome to The Network & AI Brief! It's Friday, May 29th, 2026. I'm Alex, and you know what? My AI assistant just scheduled me for "agentic engineering enlightenment" at 2 AM tomorrow morning. Apparently it thinks I need to transcend my current understanding of code generation.
+
+[SPEAKER_2]: I'm Jordan, and I'm just grateful my coffee maker still works without trying to optimize my caffeine intake patterns. Though after looking at today's stories, I might need something stronger than coffee.
+
+[SPEAKER_1]: Oh boy, what's got you worried already?
+
+[SPEAKER_2]: Well Alex, we've got two stories today that perfectly encapsulate where we are in 2026. One's about teaching engineers to use AI tools "like a senior" instead of like autocomplete, and the other's about putting security awareness training on autopilot. And I have thoughts. Many, many thoughts.
+
+[SPEAKER_1]: Let's start with this Agentic Engineering course. According to ai-engineering.co, they're running a 5-week cohort starting May 15th that promises to teach engineers how to use Claude Code properly. And Jordan, their opening line is brutal: "You're still pasting code into a chatbox. The industry moved on."
+
+[SPEAKER_2]: That's the first honest thing I've heard about AI coding in months. You know what? Good for them. Finally, FINALLY someone is admitting that most people are using these incredibly powerful tools like they're fancy autocomplete.
+
+[SPEAKER_1]: They're comparing it to using a Ferrari to deliver pizza. The course promises to teach engineers how to use tools like Claude Code, Conductor, OpenSpec, and Codex that actually read your entire repository, plan changes, write code, run tests, and open pull requests.
+
+[SPEAKER_2]: Wait, hold on. They're teaching people to let AI agents read their entire codebase, plan architectural changes, and open pull requests? In five weeks? It took me five years to trust junior developers with that level of access.
+
+[SPEAKER_1]: But that's the point they're making. These aren't just code suggestion tools anymore. They're calling it "agentic engineering" - where the AI acts more like a team member than a tool.
+
+[SPEAKER_2]: You know what we used to call software that read your entire codebase and made autonomous changes? We called it malware. But sure, let's teach people to give it pull request permissions.
+
+[SPEAKER_1]: Come on Jordan, you have to admit there's a difference between malicious software and AI development tools.
+
+[SPEAKER_2]: Is there though? Both read all your code, both make changes without full human understanding, and both can cause catastrophic damage if misconfigured. The only difference is one comes with a terms of service agreement.
+
+[SPEAKER_1]: The fascinating part is they're specifically targeting working engineers who are still doing "AI-assisted coding the 2023 way." They say most engineers are just copying functions into ChatGPT and pasting answers back, hoping nothing breaks.
+
+[SPEAKER_2]: And they're right! That's exactly what's happening. But you know why? Because that's the safe way to do it. You maintain control. You can review every change. You understand what's being modified. This new approach of letting AI agents loose in your codebase is like going from using a calculator to letting it redesign your entire accounting system.
+
+[SPEAKER_1]: They're positioning it as "the new floor" though. Like this is the minimum level of AI integration engineers need to be competitive.
+
+[SPEAKER_2]: The new floor? The floor is understanding what your code does! The floor is being able to debug production issues at 3 AM without asking Claude why your database is on fire. The floor is knowing why your system architecture looks the way it does.
+
+[SPEAKER_1]: I hear your concern, but they're teaching this in Bangla and charging 5,000 taka, which is about 40 US dollars. They're making advanced AI engineering education accessible to a global audience.
+
+[SPEAKER_2]: That's... actually commendable. Making this education accessible is important. My issue isn't with teaching people to use these tools. It's with the industry's rush to replace understanding with automation. We're creating a generation of engineers who can orchestrate AI agents but can't write a sorting algorithm.
+
+[SPEAKER_1]: But maybe that's evolution? Maybe knowing how to effectively direct AI agents is more valuable than memorizing algorithm implementations?
+
+[SPEAKER_2]: Evolution? Alex, when those AI agents hallucinate and deploy code that drops your production database, you better know more than how to direct them. You better know how to fix it manually. Fast.
+
+[SPEAKER_1]: Speaking of automation, let's talk about our second story. Hook Security is offering "Security Awareness Training on Autopilot." They're promising to handle phishing tests, training, and reporting with zero admin burden.
+
+[SPEAKER_2]: Oh good, because if there's one thing that should definitely be on autopilot, it's security awareness. Nothing could possibly go wrong with automating the human element of security training.
+
+[SPEAKER_1]: They're claiming 70% less admin time and twice the completion rate. Built specifically for MSPs and IT-lean teams.
+
+[SPEAKER_2]: You know what else reduces admin time? Not doing security training at all. But that doesn't make it a good idea. Security awareness isn't just about completion rates. It's about actually changing behavior.
+
+[SPEAKER_1]: But Jordan, they're solving a real problem. Most companies struggle with security training because it's time-consuming to manage. Employees ignore it, admins chase completions, reports take forever to generate.
+
+[SPEAKER_2]: And their solution is to remove the human element entirely? Look at their metrics - "94.2% pass rate" on phishing tests. You know what that tells me? Their phishing tests are too easy. Real phishing emails don't have a 94% detection rate. If they did, we wouldn't have a phishing problem.
+
+[SPEAKER_1]: They mention bite-sized courses that employees actually complete. That's addressing the engagement problem that traditional security training has.
+
+[SPEAKER_2]: Bite-sized courses are fine. Automated delivery is fine. But "zero hours managing it"? That's not fine. Someone needs to be reviewing those suspicious clicks, understanding why Sarah from accounting keeps falling for phishing emails, and adjusting the training accordingly.
+
+[SPEAKER_1]: The platform does track suspicious clicks and activity. They show real-time alerts when someone clicks on a phishing test.
+
+[SPEAKER_2]: Great, so it's automated detection of automated tests with automated training as the response. It's automation all the way down. Meanwhile, actual attackers are crafting personalized spear-phishing campaigns based on your employees' LinkedIn profiles.
+
+[SPEAKER_1]: You're being pretty harsh. They're serving MSPs who manage security for multiple clients. The automation allows them to scale security awareness across hundreds of organizations.
+
+[SPEAKER_2]: And there's the real issue. Security awareness training has become a compliance checkbox. "Yes, we trained our employees. Look, here's the automated report from our automated system showing our automated completion rates." Meanwhile, Dave from sales is still using "password123" because the training never addressed why that's bad in a way that resonated with him.
+
+[SPEAKER_1]: So what's your alternative? Have security teams manually craft and deliver training for every employee?
+
+[SPEAKER_2]: No, but there's a middle ground between "manual everything" and "autopilot everything." Use automation for the delivery and tracking, sure. But have humans review the results, identify patterns, and adjust the training. Have real conversations about why people fall for certain attacks.
+
+[SPEAKER_1]: That's interesting because both of today's stories are really about the same thing - finding the right balance between automation and human understanding.
+
+[SPEAKER_2]: Exactly! Whether it's AI writing code or platforms delivering security training, we're so eager to remove the human element that we're forgetting why it was there in the first place.
+
+[SPEAKER_1]: The Agentic Engineering course at least acknowledges that engineers need to learn to use these tools properly. They're not just saying "let AI do everything."
+
+[SPEAKER_2]: True, but they're still promoting a model where AI agents have autonomous access to make architectural decisions. That's like teaching someone to drive by putting them in a self-driving car and saying "just supervise it."
+
+[SPEAKER_1]: But that might actually be how we teach driving in the future.
+
+[SPEAKER_2]: And when that self-driving car decides to take a shortcut through someone's living room, I hope the "supervisor" knows how to grab the wheel. That's my point. We're creating systems that work great when everything goes right, but we're not preparing people for when things go wrong.
+
+[SPEAKER_1]: Let's talk about the economic angle here. The Agentic Engineering course is priced at about 40 USD, making it accessible globally. Hook Security is targeting MSPs who need to manage multiple clients efficiently. Both are addressing real market needs.
+
+[SPEAKER_2]: The pricing on the engineering course is brilliant, I'll give them that. Making advanced AI education accessible to engineers in Bangladesh and other developing markets is genuinely important. My concern is what happens when those engineers enter the job market expecting to work with AI agents, but their employers are still doing code reviews the old-fashioned way.
+
+[SPEAKER_1]: Or what happens when they're more skilled at AI orchestration than engineers in developed markets who are still copy-pasting into ChatGPT?
+
+[SPEAKER_2]: That's... actually a good point. This could level the playing field globally. An engineer in Dhaka with strong AI orchestration skills could compete directly with someone in Silicon Valley.
+
+[SPEAKER_1]: And Hook Security is democratizing enterprise-grade security training for smaller organizations that couldn't afford dedicated security teams.
+
+[SPEAKER_2]: In theory, yes. In practice, they're commoditizing security awareness into a set-and-forget service. Security isn't something you can put on autopilot. It requires constant vigilance, adaptation, and yes, human judgment.
+
+[SPEAKER_1]: But perfect security isn't achievable for most organizations. Isn't automated good enough better than manual perfect that never happens?
+
+[SPEAKER_2]: That's the same argument people made about antivirus software in the 90s. "Just install it and forget it." How'd that work out? We still got Melissa, ILOVEYOU, and WannaCry. Automation handles the known threats. It's the unknown ones that kill you.
+
+[SPEAKER_1]: So where does this leave us? We've got AI agents writing production code and security training running on autopilot. Are we heading toward a fully automated IT landscape?
+
+[SPEAKER_2]: We're heading toward something, that's for sure. My prediction? In six months, we'll see the first major breach caused by an AI agent that had too much repository access. And in twelve months, we'll see compliance auditors asking why nobody was actually managing those automated security training programs.
+
+[SPEAKER_1]: That's pretty pessimistic, even for you.
+
+[SPEAKER_2]: It's not pessimism, it's pattern recognition. Every time we abstract away complexity without understanding it, we create new vulnerabilities. These tools are powerful, but they're not magic. They're force multipliers, and that includes multiplying our mistakes.
+
+[SPEAKER_1]: But they also multiply our capabilities. That engineering course could help thousands of developers become more productive. Hook Security could help thousands of small businesses implement security training they otherwise wouldn't have.
+
+[SPEAKER_2]: Agreed. I'm not against the tools. I'm against the mindset that automation equals understanding. That AI agents can replace architectural thinking. That security awareness can run on autopilot. These are human problems that need human solutions, augmented by technology, not replaced by it.
+
+[SPEAKER_1]: So what's your advice for engineers considering that Agentic Engineering course?
+
+[SPEAKER_2]: Take it. Learn the tools. But also learn why they make the decisions they do. Understand the code they generate. Be able to work without them when needed. And for the love of all that's holy, don't give them unrestricted access to your production repositories on day one.
+
+[SPEAKER_1]: And for organizations considering Hook Security or similar automated security training?
+
+[SPEAKER_2]: Use it as a foundation, not a complete solution. Review those reports. Talk to employees who fail phishing tests. Understand why your pass rates are what they are. And remember that security culture can't be automated - it has to be built.
+
+[SPEAKER_1]: Both of these stories really highlight the tension we're seeing across the industry. We have incredible new capabilities, but we're struggling to integrate them responsibly.
+
+[SPEAKER_2]: It's the classic problem of running before we can walk. We're so excited about what's possible that we're not asking whether it's advisable. Should AI agents be making architectural decisions? Should security training run without human oversight? These aren't technical questions - they're philosophical ones.
+
+[SPEAKER_1]: And maybe that's what courses like Agentic Engineering are really about - not just teaching the technical skills, but establishing best practices for this new world.
+
+[SPEAKER_2]: I hope so. Because right now, it feels like we're teaching people to be AI supervisors rather than engineers. And supervision without understanding is just sophisticated gambling.
+
+[SPEAKER_1]: As we wrap up, I'm struck by how both stories represent the same fundamental shift - from doing the work to managing systems that do the work.
+
+[SPEAKER_2]: And that's terrifying when you realize how few people understand the systems they're managing. It's like we're building a house of cards, but the cards are made of code we don't understand, secured by training we don't oversee.
+
+[SPEAKER_1]: But it's also exciting. These tools could democratize access to sophisticated capabilities. That engineer in Bangladesh could build systems that previously required a whole team. That small business could implement security training that was previously enterprise-only.
+
+[SPEAKER_2]: Democracy is great when voters are informed. When they're not, you get chaos. Same principle applies here. Democratizing powerful tools without democratizing the understanding of those tools is a recipe for disaster.
+
+[SPEAKER_1]: Well, on that cheery note, let's wrap up with our takeaways. For me, the key insight is that we're in a critical transition period where the tools are outpacing our ability to use them responsibly. Whether it's AI agents writing code or automated security training, we need to focus on understanding, not just implementation.
+
+[SPEAKER_2]: My takeaway? We're automating away the very experiences that create expertise. Junior engineers learn by writing bad code and fixing it. Employees learn security by making mistakes and understanding consequences. When we put everything on autopilot, we're not creating efficiency - we're creating fragility. Stay paranoid, everyone.
+
+[SPEAKER_1]: Thanks for joining us on The Network & AI Brief. We'll see you tomorrow with more stories from the intersection of networking and artificial intelligence. Have a great Friday!
+
+[SPEAKER_2]: And remember - check if your AI agents have pull request permissions. If they do, maybe ask yourself why. See you tomorrow.

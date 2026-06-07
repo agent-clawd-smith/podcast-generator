@@ -1,0 +1,61 @@
+[SPEAKER_1]: Good morning everyone, and welcome to The Network & AI Brief! I'm Alex, and my AI assistant has outdone itself today - it scheduled me for a "harness debugging ceremony" at 3 AM, followed by "agent orchestration meditation" at dawn. I'm starting to think it's trying to tell me something about the state of AI governance.
+
+[SPEAKER_2]: Morning Alex. Let me guess - it also suggested you attend a "framework enlightenment workshop" and a "runtime enforcement healing circle"? Because that's basically what the industry needs right now. We're drowning in AI agents that can't govern themselves, and everyone's scrambling for solutions.
+
+[SPEAKER_1]: You know what's fascinating, Jordan? That first story from DEV Community really nails it. They're saying your LLM isn't an agent, your framework isn't enough - you need a harness. And they're absolutely right. Every team building with AI agents hits this wall where the demo works perfectly, but production is a nightmare of infinite loops and burned API calls.
+
+[SPEAKER_2]: Finally, someone's talking about the real problems instead of just hyping capabilities. You know what happens without proper harness infrastructure? I've seen agents burn through entire monthly API budgets in three hours because they got stuck in a loop. No memory between sessions, no error handling, just pure chaos. It's like giving a toddler the keys to a bulldozer and hoping they'll build you a house.
+
+[SPEAKER_1]: The article makes this great point - it's not a model problem, it's an infrastructure problem. The agent has intelligence but no operating environment. No structured loop to run in, no memory to draw on, no rules to constrain it. They're calling this operating environment a "harness," and it's what separates a demo agent from one you'd trust in production.
+
+[SPEAKER_2]: And speaking of trust in production, Camille Stewart Gloster's new book "The Insider You Built" tackles exactly this problem from a governance angle. She's addressing how organizations can stay in control of autonomous AI agents. The title alone gives me chills - these agents are literally insiders we're building into our systems.
+
+[SPEAKER_1]: The timing couldn't be better. She's available for preorder now, and given how fast the agent landscape is evolving, by the time it ships, we'll probably have even more governance nightmares to deal with. But Jordan, what really caught my attention was that YouTube video about scalable runtime governance for AI agents in financial services.
+
+[SPEAKER_2]: Eight minutes and twenty-six seconds of pure reality check. Financial services can't afford to play fast and loose with AI agents. When you're dealing with people's money, "oops, the agent went rogue" isn't an acceptable excuse. The paper they reference talks about runtime governance - not just policies you write down, but actual enforcement mechanisms.
+
+[SPEAKER_1]: Which brings us to that brilliant ARMO blog post about AI agent governance. They're asking the hard question - why do most governance programs fail to enforce what they publish? And their answer is sobering. The enforcement mechanisms most programs use share a boundary with the workload they're meant to constrain.
+
+[SPEAKER_2]: The Enforceability Ladder they describe should be mandatory reading for anyone deploying agents. Five rungs - Aspirational, Documentary, Attested, Application-plane Enforced, and Two-Plane Verified. Most enterprises are stuck at rungs two and three, claiming they're at four because they have some middleware deployed. Almost nobody reaches rung five because that requires actual trust anchors outside the agent's process.
+
+[SPEAKER_1]: It's like having a security guard who's best friends with the person they're supposed to be watching. The agent sits between the policy engine and the verification, so you can't independently verify that enforcement actually happened. The whole trust model is fundamentally broken.
+
+[SPEAKER_2]: And while everyone's struggling with basic agent governance, Google drops Gemini Omni, which can apparently "create anything from any input." Starting with video, because apparently we needed more complexity in our lives. Don't get me wrong, the technology is impressive, but I'm sitting here thinking about all the new attack surfaces this opens up.
+
+[SPEAKER_1]: Ben Schoon's take on 9to5Google really resonated with me. He's got mixed feelings about all this practical AI Google's showing. On one hand, Google's demonstrating some genuinely useful ideas. On the other hand, until we can trust it, it's hard to get excited. He makes this point about hearing new AI products and thinking "why would I ever use this?"
+
+[SPEAKER_2]: That's the thing - we're so focused on what AI can do, we're not asking whether it should do it, or more importantly, whether we can control it when it does. It's like we're building Formula One cars while the roads are still dirt paths with no traffic lights, no speed limits, and no guardrails.
+
+[SPEAKER_1]: Speaking of infrastructure that actually works, let's talk about something more grounded - Wi-Fi calling. This Airhub article explains what it is and how it works. It's essentially Voice-over-Wi-Fi built into smartphones, letting you make calls over Wi-Fi instead of cellular networks.
+
+[SPEAKER_2]: Now this is technology I can get behind. Deterministic, predictable, solves a real problem. No agent deciding on its own whether your call deserves to go through. Just good old-fashioned engineering - your voice gets converted to data packets, travels over Wi-Fi, and comes out the other end as voice again.
+
+[SPEAKER_1]: And with 802.11ax - what Qualcomm's pushing - we're getting 4x capacity increases and better efficiency. It's designed for dense connectivity and handling diverse devices, which is exactly what we need as everything gets connected.
+
+[SPEAKER_2]: See, this is how you build infrastructure. You identify the problem - too many devices, not enough capacity. You engineer a solution - better spectrum efficiency, improved scheduling. You test it, standardize it, deploy it. No "vibe coding," no hoping the AI figures it out. Just solid engineering principles.
+
+[SPEAKER_1]: But back to the AI agent world - Pinnacloid is offering "Agentic AI Development Services," promising to build autonomous, goal-driven AI agents that transform complex workflows into self-driving systems. They've got categories like Autonomous Process Agents, Customer Interaction Agents, Knowledge Assistants, and Operational Intelligence Agents.
+
+[SPEAKER_2]: "Self-driving systems" - there's a phrase that should terrify anyone who's actually had to maintain production systems. Remember when self-driving cars were supposed to be everywhere by 2020? At least when a self-driving car fails, it hopefully just stops. When a self-driving business process fails, it might approve a million-dollar purchase order to your competitor.
+
+[SPEAKER_1]: The job market's certainly reflecting this agent gold rush. Trilagen's hiring a Senior Sales Executive specifically for Agentic AI, and they're brutally honest about it. They explicitly say if your sales career has been at companies where the brand opens doors, this isn't for you. They need someone who can sell emerging tech without a Fortune 500 logo backing them.
+
+[SPEAKER_2]: Nine billion dollar market in 2026, but only 23% seeing real ROI. That's a 77% failure rate hidden behind buzzwords and demos. Average implementation cost of $890,000 per agent deployment. For that money, you could hire actual humans who won't randomly decide to reorganize your entire database schema at 2 AM.
+
+[SPEAKER_1]: And the technical roles are even more demanding. AMZ One Step is looking for an AI Orchestration & Enterprise Integration Architect. The requirements read like a wishlist from someone who's been burned by every AI deployment mistake possible. They want experience with LangChain, AutoGen, CrewAI, plus enterprise systems like Oracle EBS and ServiceNow.
+
+[SPEAKER_2]: That job description is basically saying "we need someone who can make all these AI frameworks talk to our ancient enterprise systems without burning down the data center." Good luck finding that unicorn. The people with that skillset are probably too busy fixing the AI disasters they've already deployed to take new jobs.
+
+[SPEAKER_1]: Let's end on something positive though. Scale Computing just advanced their SD-WAN platform after acquiring Adaptiv Networks. They're launching SC//Connect, combining intelligent SD-WAN with integrated SASE security services.
+
+[SPEAKER_2]: Now that's how you do an acquisition. Take proven SD-WAN technology, add security services, make it cloud-managed for distributed organizations. No mention of AI agents deciding your routing policies or autonomous systems reconfiguring your network topology. Just solid, manageable infrastructure that does what it says on the tin.
+
+[SPEAKER_1]: Jordan, we've covered a lot today - from AI agents needing harnesses to Gemini Omni's ambitions, from Wi-Fi evolution to the harsh realities of agent deployment costs. What's your biggest takeaway from all this?
+
+[SPEAKER_2]: My takeaway is that we're finally seeing the industry wake up to the fact that AI agents without proper governance and infrastructure are just expensive random number generators. That ARMO article about the Enforceability Ladder and the DEV Community piece about harnesses show we're starting to ask the right questions. But we're still building Formula One cars for go-kart tracks, and that $890,000 average implementation cost with 77% failure rate proves it. Stay paranoid, everyone.
+
+[SPEAKER_1]: For me, it's the tension between possibility and practicality that stood out today. Google's showing us amazing capabilities with Gemini Omni, but Ben Schoon's mixed feelings reflect what many of us feel - we need trust before we can get excited. The fact that companies are explicitly hiring for people who can sell without brand recognition tells me we're in the "prove it works" phase of AI agents, not the "assume it works" phase. And that's actually a healthy place to be.
+
+[SPEAKER_2]: See you all tomorrow, where I'm sure we'll have more AI agents doing things they shouldn't and more infrastructure struggling to keep up.
+
+[SPEAKER_1]: And I'll probably have another bizarre AI assistant scheduling adventure to share. Until then, this has been The Network & AI Brief!
